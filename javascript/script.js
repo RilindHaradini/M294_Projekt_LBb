@@ -1,3 +1,4 @@
+//GET
 const token = sessionStorage.getItem("Key");
 if (!token) {
 	window.location.href = "/public/login.html";
@@ -36,6 +37,7 @@ function createTaskCard(task) {
 	return taskCard;
 }
 
+//DELETE
 const taskList = document.querySelector(".mytasks");
 
 function createTaskCard(task) {
@@ -52,16 +54,22 @@ function createTaskCard(task) {
 	card.appendChild(taskID);
 
 	const completed = document.createElement("p");
-	completed.textContent = `Erledigt?: ${task.completed}`;
+	completed.textContent = `Erledigt: ${task.completed}`;
 	card.appendChild(completed);
 
-	const deleteButton = document.createElement("i");
-	deleteButton.className = "deleteButton fa-sharp fa-solid fa-trash fa-lg";
-	deleteButton.addEventListener("click", () => {
+	const trashButton = document.createElement("i");
+	trashButton.className = "trashButton fa-sharp fa-solid fa-trash fa-lg";
+	trashButton.addEventListener("click", () => {
 		deleteTask(task.id);
 		card.remove();
 	});
-	card.appendChild(deleteButton);
+	const penButton = document.createElement("i");
+	penButton.className = "penButton fa-sharp fa-solid fa-pen fa-lg";
+	penButton.addEventListener("click", () => {
+		editTask(task.id);
+	});
+	card.appendChild(trashButton);
+	card.appendChild(penButton);
 
 	return card;
 }
@@ -88,6 +96,7 @@ function deleteTask(taskId) {
 		});
 }
 
+//POST
 const taskInput = document.querySelector(".task-input");
 const erledigtJa = document.querySelector("#erledigt-ja");
 const erledigtNein = document.querySelector("#erledigt-nein");
@@ -116,3 +125,4 @@ addButton.addEventListener("click", () => {
 		}
 	});
 });
+

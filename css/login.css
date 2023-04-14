@@ -12,7 +12,8 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 }
 
-.login-form {
+ /*https://hype4.academy/tools/glassmorphism-generator*/
+.login-form { 
 	background: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.37);
 	backdrop-filter: blur(10.5px);
