@@ -32,3 +32,9 @@ Meine Webseite kann eine bestimmte Aufgabe anzeigen, wenn die Task-ID in der URL
 - HTML label Tag (https://www.w3schools.com/)
   
 ---
+### Github
+
+Während des Projekts habe ich mit Github gearbeitet und habe regelmässig commits durchgeführt.
+(https://github.com/rilind-haradini/M294_Projekt_LBb)
+
+---
