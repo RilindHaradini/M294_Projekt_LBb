@@ -17,12 +17,11 @@ document
 				if (response.status === 200) {
 					return response.json();
 				} else {
-					alert("Incorrect Password!");
-					throw new Error("Incorrect Password!");
+					alert("Falsches Passwort!");
 				}
 			})
-			.then((data) => {
-				sessionStorage.setItem("jwtToken", data.token);
+			.then((response) => {
+				sessionStorage.setItem("Key", response.token);
 				window.location.href = "/public/index.html";
 			});
 	});

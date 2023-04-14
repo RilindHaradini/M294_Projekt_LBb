@@ -12,20 +12,19 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 }
 
-
 .login-form {
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(10.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 500px;
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.37);
+	backdrop-filter: blur(10.5px);
+	-webkit-backdrop-filter: blur(10.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 500px;
 }
 
 form {
@@ -66,4 +65,5 @@ p {
 	font-size: 30px;
 	font-family: "Bebas Neue", cursive;
 	margin-bottom: 10px;
+	letter-spacing: 4px;
 }
