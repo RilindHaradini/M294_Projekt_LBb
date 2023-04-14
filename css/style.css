@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 body {
 	background: url(/img/background.jpg) no-repeat;
 	background-size: cover;
 	color: white;
-	
 	font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -20,6 +19,7 @@ body {
 }
 
 #tasks {
+	margin-top: 50px;
 	background-color: rgba(0, 0, 0, 0.336);
 	padding: 30px;
 	width: 1200px;
@@ -32,7 +32,7 @@ body {
 	transform: translate(-50%, -50%);
 	border-radius: 5px;
 	text-align: center;
-	}
+}
 
 .titleDiv {
 	font-family: "Bebas Neue", cursive;
@@ -41,57 +41,115 @@ body {
 }
 
 .mytasks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	
 }
 
 .taskcard {
-    background-color: #00000077;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: center;
+	background-color: #00000077;
+	border-radius: 10px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
 }
 
 .taskcard h2 {
-    font-family: "Abel", sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
+	font-family: "Abel", sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
 .taskcard p {
-    font-size: 25px;
-    margin-bottom: 5px;
+	font-size: 25px;
+	margin-bottom: 5px;
 }
 
 .input-container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
-	max-width: 400px;
 	margin: 0 auto;
-  }
-  
-  .task-input {
-	width: 100%;
-	padding: 10px;
+	margin-bottom: 20px;
+	
+}
+
+.task-input {
+	width: 150px;
+	padding: 30px;
 	border: none;
-	border-radius: 5px 0 0 5px;
+	border-radius: 5px 5px 5px 5px;
 	font-size: 16px;
-  }
-  
-  .add-btn {
+	position: absolute;
+	margin-left: 50px;
+	top: 2;
+	left: 0;
+}
+
+.addBtn {
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
 	border: none;
 	padding: 10px 15px;
-	border-radius: 0 5px 5px 0;
+	border-radius: 5px 5px 5px 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-  }
-  
+	margin-left: 260px;
+}
 
-  
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	width: 290px;
+}
+
+.label {
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.checkbox-group {
+	align-items: center;
+}
+
+input[type="radio"] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+label {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+label:hover {
+	background-color: #eee;
+}
+
+input[type="radio"]:checked + label {
+	background-color: #000000;
+	color: white;
+	border-color: #000000;
+}
+
+input[type="radio"]:checked + label:hover {
+	background-color: #000000;
+	border-color: #000000;
+}

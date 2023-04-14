@@ -5,19 +5,45 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/css/style.css" />
-		<script src="/javascript/script.js"></script>
+		<script
+			src="https://kit.fontawesome.com/dc405ac003.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Document</title>
 	</head>
 	<h1 id="title">TODO LIST</h1>
 	<body>
 		<div id="tasks">
 			<h1 class="titleDiv">Meine Aufgaben</h1>
-            <div class="mytasks"></div>
+			<div class="mytasks"></div>
 		</div>
 		<div class="input-container">
-			<input type="text" class="task-input" placeholder="Aufgabe hinzufügen...">
-			<button class="add-btn"><i class="fas fa-plus"></i></button>
-		  </div>
-		  
+			<input
+				type="text"
+				class="task-input"
+				placeholder="Aufgabe hinzufügen..."
+			/>
+			<button class="addBtn"><i class="fas fa-plus"></i></button>
+		</div>
+		<div class="checkbox-container">
+			<span class="label">Erledigt:</span>
+			<div class="checkbox-group">
+				<input
+					type="radio"
+					id="erledigt-ja"
+					name="erledigt"
+					value="ja"
+				/>
+				<label for="erledigt-ja">Ja</label>
+				<input
+					type="radio"
+					id="erledigt-nein"
+					name="erledigt"
+					value="nein"
+				/>
+				<label for="erledigt-nein">Nein</label>
+			</div>
+		</div>
+		<script src="/javascript/script.js"></script>
 	</body>
 </html>
